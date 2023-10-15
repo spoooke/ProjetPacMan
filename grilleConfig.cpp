@@ -12,14 +12,12 @@ GrilleConfig::GrilleConfig(int width, int height) : GRID_WIDTH(width), GRID_HEIG
 }
 
 void GrilleConfig::initializeGrid() {
-    // Remplir la grille avec des murs
     for (int i = 0; i < GRID_HEIGHT; ++i) {
         for (int j = 0; j < GRID_WIDTH; ++j) {
             grid[i][j] = WALL;
         }
     }
 
-    // Placer des points et des super points
     grid[1][1] = POINT;
     grid[1][13] = POINT;
     grid[8][3] = POINT;
@@ -33,4 +31,16 @@ void GrilleConfig::displayGrid() {
         }
         std::cout << std::endl;
     }
+}
+
+int GrilleConfig::getGRID_WIDTH() const {
+    return GRID_WIDTH;
+}
+
+int GrilleConfig::getGRID_HEIGHT() const {
+    return GRID_HEIGHT;
+}
+
+const std::vector<std::vector<char> >& GrilleConfig::getGrid() const {
+    return grid;
 }
