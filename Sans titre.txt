@@ -1,11 +1,11 @@
 commencer la conception d'un jeu Pac-Man en C++ :
-		Configuration de la grille de jeu :
-	•	Créez une grille de jeu représentant le labyrinthe. Vous pouvez utiliser une matrice de caractères pour cela, où chaque caractère représente un mur, un point, un super point, un Pac-Man, des fantômes, etc.
-		Gestion des personnages :
-	•	Créez des classes pour les personnages du jeu, tels que Pac-Man et les fantômes. Chacune de ces classes doit gérer la position, le déplacement, et l'état des personnages.
+	$$	Configuration de la grille de jeu :
+		Créez une grille de jeu représentant le labyrinthe. Vous pouvez utiliser une matrice de caractères pour cela, où chaque caractère représente un mur, un point, un super point, un Pac-Man, des fantômes, etc.
+	$$	Gestion des personnages :
+		Créez des classes pour les personnages du jeu, tels que Pac-Man et les fantômes. Chacune de ces classes doit gérer la position, le déplacement, et l'état des personnages.
 		Déplacement :
 	•	Mettez en place la logique de déplacement en utilisant des mécanismes de contrôle de Pac-Man.
-	•	Définissez des règles pour le comportement des fantômes, en leur permettant de poursuivre Pac-Man de manière intelligente.
+	$	Définissez des règles pour le comportement des fantômes, en leur permettant de poursuivre Pac-Man de manière intelligente.
 		Gestion des points :
 	•	Suivez le nombre de points collectés par Pac-Man. Les points incluent les points normaux et les super points qui permettent à Pac-Man de manger les fantômes.
 		Collisions :

@@ -9,12 +9,14 @@ public:
     void move();
     int getX() const;
     int getY() const;
+    void reset(int initialX, int initialY);
     bool isWall(int x, int y) const;
 
 private:
     int x;
     int y;
     GrilleConfig& grid; // Membre de données pour stocker la référence à la grille
+    bool canMove(int newX, int newY) const;
 };
 
 #endif

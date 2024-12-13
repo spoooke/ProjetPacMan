@@ -12,7 +12,8 @@ public:
     // Ajoutez d'autres fonctions au besoin
     int getGRID_WIDTH() const; // Ajoutez une fonction pour obtenir GRID_WIDTH
     int getGRID_HEIGHT() const; // Ajoutez une fonction pour obtenir GRID_HEIGHT
-    const std::vector<std::vector<char> >& getGrid() const; // Ajoutez une fonction pour obtenir la grille
+    std::vector<std::vector<char> >& getGrid();  // Retiré le const pour permettre la modification
+    const std::vector<std::vector<char> >& getGrid() const;  // Gardé la version const
     static const char WALL; // Déclarez WALL comme une constante statique
     // ... autres membres et fonctions
 
